@@ -1,0 +1,44 @@
+'use strict'; // angular.module("ngLocale", [], ["$provide", function($provide)
+{ var PLURAL_CATEGORY = {ZERO: "zero", ONE: "one", TWO: "two", FEW: "few", MANY:
+"many", OTHER: "other"}; $provide.value("$locale", { "DATETIME_FORMATS":
+{"medium":"dd MMM, yyyy HH:mm","short":"dd MMM, h:mm a","fullDate":"EEE, dd MMM,
+yyyy","longDate":"EEE, dd MMM, yyyy","mediumDate":"EEE, dd MMM,
+yyyy","shortDate":"dd MMM","mediumTime":"dd MMM, yyyy HH:mm","shortTime":"dd
+MMM, h:mm a","dateDefault":"yyyy-MM-dd","shortDateWithYear":"dd MMM,
+yyyy","shortTimeWithYear":"dd MMM, yyyy h:mm a","timeOnly":"h:mm
+a","jquery.date.default":"yy-mm-dd","jquery.date.long":"D, dd M,
+yy","jquery.date.short":"dd M","jquery.date.short_with_year":"dd M,
+yy","jquery_time_plugin.time_only":"h:mm
+tt","AMPMS":["am","pm"],"DAY":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"MONTH":["January","February","March","April","May","June","July","August","September","October","November","December"],"SHORTDAY":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"SHORTMONTH":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},
+"NUMBER_FORMATS":
+{"CURRENCY_SYM":"$","DECIMAL_SEP":".","GROUP_SEP":",","PATTERNS":[{"gSize":3,"lgSize":3,"macFrac":0,"maxFrac":3,"minFrac":0,"minInt":1,"negPre":"-","negSuf":"","posPre":"","posSuf":""},{"gSize":3,"lgSize":3,"macFrac":0,"maxFrac":2,"minFrac":2,"minInt":1,"negPre":"(\u00a4","negSuf":")","posPre":"\u00a4","posSuf":""}]},
+"id": "en-us", "pluralCat": function (n) { if (n == 1) { return
+PLURAL_CATEGORY.ONE; } return PLURAL_CATEGORY.OTHER;}, "currency_symbols":
+{"USD":"$","EUR":"\u20ac","GBP":"\u00a3","AUD":"$","CAD":"$","JPY":"\u00a5","BYR":"Br","AED":"\u062f.\u0625","AFN":"\u060b","ALL":"L","AMD":"\u0564\u0580.","ANG":"\u0192","AOA":"Kz","ARS":"$","AWG":"\u0192","AZN":"\u20bc","BAM":"\u041a\u041c","BBD":"$","BDT":"\u09f3","BGN":"\u043b\u0432.","BHD":"\u0628.\u062f","BIF":"Fr","BMD":"$","BND":"$","BOB":"Bs.","BRL":"R$","BSD":"$","BTN":"Nu.","BWP":"P","BYN":"Br","BZD":"$","CDF":"Fr","CHF":"CHF","CLF":"UF","CLP":"$","CNY":"\u00a5","COP":"$","CRC":"\u20a1","CUC":"$","CUP":"$","CVE":"$","CZK":"K\u010d","DJF":"Fdj","DKK":"kr.","DOP":"$","DZD":"\u062f.\u062c","EGP":"\u062c.\u0645","ERN":"Nfk","ETB":"Br","FJD":"$","FKP":"\u00a3","GEL":"\u10da","GHS":"\u20b5","GIP":"\u00a3","GMD":"D","GNF":"Fr","GTQ":"Q","GYD":"$","HKD":"$","HNL":"L","HRK":"kn","HTG":"G","HUF":"Ft","IDR":"Rp","ILS":"\u20aa","INR":"\u20b9","IQD":"\u0639.\u062f","IRR":"\ufdfc","ISK":"kr","JMD":"$","JOD":"\u062f.\u0627","KES":"KSh","KGS":"som","KHR":"\u17db","KMF":"Fr","KPW":"\u20a9","KRW":"\u20a9","KWD":"\u062f.\u0643","KYD":"$","KZT":"\u3012","LAK":"\u20ad","LBP":"\u0644.\u0644","LKR":"\u20a8","LRD":"$","LSL":"L","LTL":"Lt","LVL":"Ls","LYD":"\u0644.\u062f","MAD":"\u062f.\u0645.","MDL":"L","MGA":"Ar","MKD":"\u0434\u0435\u043d","MMK":"K","MNT":"\u20ae","MOP":"P","MRO":"UM","MUR":"\u20a8","MVR":"MVR","MWK":"MK","MXN":"$","MYR":"RM","MZN":"MTn","NAD":"$","NGN":"\u20a6","NIO":"C$","NOK":"kr","NPR":"\u20a8","NZD":"$","OMR":"\u0631.\u0639.","PAB":"B/.","PEN":"S/.","PGK":"K","PHP":"\u20b1","PKR":"\u20a8","PLN":"z\u0142","PYG":"\u20b2","QAR":"\u0631.\u0642","RON":"Lei","RSD":"\u0420\u0421\u0414","RUB":"\u20bd","RWF":"FRw","SAR":"\u0631.\u0633","SBD":"$","SCR":"\u20a8","SDG":"\u00a3","SEK":"kr","SGD":"$","SHP":"\u00a3","SKK":"Sk","SLL":"Le","SOS":"Sh","SRD":"$","SSP":"\u00a3","STD":"Db","SVC":"\u20a1","SYP":"\u00a3S","SZL":"E","THB":"\u0e3f","TJS":"\u0405\u041c","TMT":"T","TND":"\u062f.\u062a","TOP":"T$","TRY":"\u20ba","TTD":"$","TWD":"$","TZS":"Sh","UAH":"\u20b4","UGX":"USh","UYU":"$","UZS":"UZS","VEF":"Bs","VND":"\u20ab","VUV":"Vt","WST":"T","XAF":"Fr","XAG":"oz
+t","XAU":"oz
+t","XCD":"$","XDR":"SDR","XOF":"Fr","XPF":"Fr","YER":"\ufdfc","ZAR":"R","ZMK":"ZK","ZMW":"ZK","BTC":"B\u20e6","JEP":"\u00a3","GGP":"\u00a3","IMP":"\u00a3","EEK":"KR","MTL":"\u20a4","TMM":"m","ZWD":"$","ZWL":"$","ZWN":"$","ZWR":"$"}
+}); }]); /** *ClientService has four new presets *Which is used in photo
+uploader directive to validate image * Following are the presets used by
+uploader *banner_image_presets: used to validate banner uploads
+*logo_or_thumb_image_presets: used to validate logos and and team members upload
+*background_section_image_presets: used to validate back ground uploads
+*medium_image_presets: used to validate facebook og images and coupon images
+upload * In Rails these can be refered in website_setting_methods_mixin */ //
+angular.module('vl.common').service('ClientService', function() { var client =
+{"currency":"INR","currency_switcher_enabled":false,"domain":"Trek The
+Bharatnew.vacationlabs.com","id":22655,"name":"Byko
+Journeys","new_storefront":true,"support_email":"nirajsingh19982017@gmail.com","support_phone":"+918382085044","tz":"Asia/Kolkata","booking_terms_url":null,"trip_label":{"singular":"trip","plural":"trips"},"dep_label":{"singular":"departure","plural":"departures"},"pax_label":{"singular":"participant","plural":"participants"},"room_label":{"singular":"room","plural":"rooms"},"is_supplier_account":false,"permissions":{"max_users":3,"mailchimp_enabled":false,"branding":"basic_control","vl_gateway":"vl_gateway_not_available","backoffice_access":"full_access","storefront_access":"full_access","website_enabled":true,"booking_engine_enabled":true,"post_booking_forms_enabled":false,"accelerate_plugin_enabled":true,"dates_and_rates_section_enabled":false,"collection_search_enabled":true,"global_search_enabled":true,"urgency_triggers_available":false},"primary_engine":null,"primary_domain":"www.Trek
+The
+Bharat.com","account_type":"independent","max_support_phones":5,"primary_domain_with_protocol":"https://www.Trek
+The Bharat.com","i18n":{"number":{"currency":{"format":{"format":"%u
+%n","unit":"$","separator":".","delimiter":",","precision":2,"significant":false,"strip_insignificant_zeros":true,"negative_format":"%u
+-%n","total_precision":2,"line_item_precision":2,"tax_item_precision":2,"thousands_separator":",","decimal_separator":"."}}},"tour_section_headings":{"overview":{"title":"Overview"},"inclusions_exclusions":{"title":"Inclusions/Exclusions","inclusions_title":"What
+is included in the tour","exclusions_title":"What is NOT included in the
+tour"},"highlights":{"title":"Highlights"},"itinerary":{"title":"Itinerary"},"pickup_point":{"title":"Pickup
+point"},"detailed_route_map":{"title":"Route
+map"},"dates_and_rates":{"title":"Dates and
+Rates"},"photogallery":"Photogallery","faq":{"title":"Frequently asked
+questions"},"offers":{"title":"Offers"},"advertised_duration_string":{"singular":{"night":"night","day":"day","hour":"hour","minute":"minute"},"plural":{"night":"nights","day":"days","hour":"hours","minute":"minutes"}}}},"customer_title_setting":"required"};
+var imgSet =
+{"ui_settings":{"image_settings":{"og_image_dimensions":{"width":1440,"height":580},"collection_banner_dimensions":{"width":1440,"height":580},"banner_section_dimensions":{"width":1440,"height":640},"coupon_banner_dimensions":{"width":1440,"height":640},"trip_banner_dimensions":{"width":1440,"height":640},"banner_image_presets":{"width":2960,"height":1110},"logo_or_thumb_image_presets":{"width":440,"height":440},"medium_image_presets":{"width":1920,"height":720},"background_section_image_presets":{"width":1024,"height":768}}}};
+angular.extend(client,imgSet) return client; });

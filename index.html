@@ -1,0 +1,3278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Trek The Bharat  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>Trek The Bharat</title>
+    <meta
+      name="description"
+      content="Trek The Bharat specializes in providing extraordinary travel experiences for individuals in search of adventures beyond the usual tourist routes.
+Offering com..."
+    />
+    <meta name="theme-color" content="#F1C40F" />
+
+    <link rel="canonical" href="../../index.html" />
+
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="./WhatsApp Image 2024-06-23 at 12.29.31_1e70eae9.png"
+    />
+
+    <!-- Open Graph Tags -->
+
+    <script>
+      loadjs = (function () {
+        var h = function () {},
+          c = {},
+          u = {},
+          f = {};
+        function o(e, n) {
+          if (e) {
+            var r = f[e];
+            if (((u[e] = n), r)) for (; r.length; ) r[0](e, n), r.splice(0, 1);
+          }
+        }
+        function l(e, n) {
+          e.call && (e = { success: e }),
+            n.length ? (e.error || h)(n) : (e.success || h)(e);
+        }
+        function d(r, t, s, i) {
+          var c,
+            o,
+            e = document,
+            n = s.async,
+            u = (s.numRetries || 0) + 1,
+            f = s.before || h,
+            l = r.replace(/[\?|#].*$/, ""),
+            a = r.replace(/^(css|img)!/, "");
+          (i = i || 0),
+            /(^css!|\.css$)/.test(l)
+              ? (((o = e.createElement("link")).rel = "stylesheet"),
+                (o.href = a),
+                (c = "hideFocus" in o) &&
+                  o.relList &&
+                  ((c = 0), (o.rel = "preload"), (o.as = "style")))
+              : /(^img!|\.(png|gif|jpg|svg|webp)$)/.test(l)
+              ? ((o = e.createElement("img")).src = a)
+              : (((o = e.createElement("script")).src = r),
+                (o.async = void 0 === n || n)),
+            !(o.onload =
+              o.onerror =
+              o.onbeforeload =
+                function (e) {
+                  var n = e.type[0];
+                  if (c)
+                    try {
+                      o.sheet.cssText.length || (n = "e");
+                    } catch (e) {
+                      18 != e.code && (n = "e");
+                    }
+                  if ("e" == n) {
+                    if ((i += 1) < u) return d(r, t, s, i);
+                  } else if ("preload" == o.rel && "style" == o.as)
+                    return (o.rel = "stylesheet");
+                  t(r, n, e.defaultPrevented);
+                }) !== f(r, o) && e.head.appendChild(o);
+        }
+        function r(e, n, r) {
+          var t, s;
+          if ((n && n.trim && (t = n), (s = (t ? r : n) || {}), t)) {
+            if (t in c) throw "LoadJS";
+            c[t] = !0;
+          }
+          function i(n, r) {
+            !(function (e, t, n) {
+              var r,
+                s,
+                i = (e = e.push ? e : [e]).length,
+                c = i,
+                o = [];
+              for (
+                r = function (e, n, r) {
+                  if (("e" == n && o.push(e), "b" == n)) {
+                    if (!r) return;
+                    o.push(e);
+                  }
+                  --i || t(o);
+                },
+                  s = 0;
+                s < c;
+                s++
+              )
+                d(e[s], r, n);
+            })(
+              e,
+              function (e) {
+                l(s, e), n && l({ success: n, error: r }, e), o(t, e);
+              },
+              s
+            );
+          }
+          if (s.returnPromise) return new Promise(i);
+          i();
+        }
+        return (
+          (r.ready = function (e, n) {
+            return (
+              (function (e, r) {
+                e = e.push ? e : [e];
+                var n,
+                  t,
+                  s,
+                  i = [],
+                  c = e.length,
+                  o = c;
+                for (
+                  n = function (e, n) {
+                    n.length && i.push(e), --o || r(i);
+                  };
+                  c--;
+
+                )
+                  (t = e[c]),
+                    (s = u[t]) ? n(t, s) : (f[t] = f[t] || []).push(n);
+              })(e, function (e) {
+                l(n, e);
+              }),
+              r
+            );
+          }),
+          (r.done = function (e) {
+            o(e, []);
+          }),
+          (r.reset = function () {
+            (c = {}), (u = {}), (f = {});
+          }),
+          (r.isDefined = function (e) {
+            return e in c;
+          }),
+          r
+        );
+      })();
+    </script>
+
+    <!-- 
+  Initialising global data structures and VL.jquery_on_load to register functions that will be called
+  when jQuery is loaded by the browser.
+-->
+    <script type="text/javascript">
+      window.VL = window.VL || {};
+      window.VL.jquery_on_load_callbacks =
+        window.VL.jquery_on_load_callbacks || [];
+      window.VL.trap_errors = function (msg, fn) {
+        return function () {
+          try {
+            fn();
+          } catch (e) {
+            console.log(msg, e);
+          }
+        };
+      };
+
+      window.VL.with_timeout = function (fn) {
+        if (window.location.search.indexOf("timeout") == -1) {
+          return fn;
+        } else {
+          return function () {
+            setTimeout(fn);
+          };
+        }
+      };
+
+      window.VL.jquery_on_load = function (msg, fn) {
+        window.VL.jquery_on_load_callbacks.push(window.VL.trap_errors(msg, fn));
+      };
+      window.VL.window_on_load = function (msg, fn) {
+        window.VL.jquery_on_load_callbacks.push(function () {
+          $(window).on("load", window.VL.trap_errors(msg, fn));
+        });
+      };
+      window.VL.document_on_ready = function (msg, fn) {
+        window.VL.jquery_on_load_callbacks.push(function () {
+          $(document).on("ready", window.VL.trap_errors(msg, fn));
+        });
+      };
+
+      window.VL.trap_errors = function (msg, fn) {
+        try {
+          fn();
+        } catch (e) {
+          console.log("error in " + msg, e);
+        }
+      };
+
+      window.VL.init_on_ready = function (msg, fn) {
+        loadjs.ready("jquery", function () {
+          $(document).ready(function () {
+            setTimeout(function () {
+              console.log("init", msg);
+              window.VL.trap_errors(msg, fn);
+            });
+          });
+        });
+      };
+
+      window.VL.createIntersectionObserver = function (elements, fn) {
+        var io = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              observer.unobserve(e.target);
+              fn(e.target);
+            }
+          });
+        });
+
+        var arr = elements.selector ? elements.toArray() : elements;
+        arr.forEach(function (e) {
+          io.observe(e);
+        });
+        return io;
+      };
+
+      window.VL.i18n_t = function () {
+        var k = arguments[0];
+        var default_text = "missing: " + k;
+        var lang = VL.language || "en";
+        if (_.isObject(arguments[1])) {
+          default_text = arguments[1].default_text || default_text;
+          lang = arguments[1].language || lang;
+        }
+
+        if (_.isString(arguments[1])) {
+          default_text = arguments[1] || default_text;
+        }
+
+        if (_.isString(arguments[2])) {
+          lang = arguments[2] || lang;
+        }
+
+        return VL.translations[lang][k] || default_text;
+      };
+
+      window.VL.mobile_breakpoint = 768;
+
+      window.ASSAN = window.ASSAN || {};
+    </script>
+
+    <!-- Client stylesheet and header script -->
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/common/store_front/themes/flexi_theme/style-946344ca8fd5b783d17d1e8e0edb731c.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/todo-a46a09f4952d908bb6900a62a98b9416.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/accordion-9dfc3b7fecece27b253f9427f1d1cc16.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/header-transparent-2867e04de9b4b5e9f77e1d96879c188a.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/footer-multi-column-8ac50cd2c22d6e477957d7cd9dbfe3fa.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-header-side-lines-219eae5dd9cc9d4838f0ea3a16798aed.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/global-storefront-search-9b6bc16ae523b5a64f3f164c70890303.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-banner-26e0d0366cc6f0f41ec44f1e3b035403.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-banner-slide-517c39fcc3e14abba68962e48d8445f2.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/vendor/owl.combined-62a03d4d6d6bd600dc64a3d7962793bf.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      loadjs.ready("jquery", function () {
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/owl_carousel-293dbeb5349a6e3a412f5437c17ab972.js",
+          ],
+          "owl_carousel",
+          { async: true }
+        );
+      });
+    </script>
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-description-f80f1762789b0d91f7b4a365e89ad5b6.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-tour-cards-2d3db5c6b5b74f5bf53217549bdbbb93.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/tour-card-modular-f5d1cb69c55dc11b4edfeb979ca5f22e.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/collection-page/collection-card-default-24aa67b66828eeada5344e397d781403.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-testimonial-7639e6b98c9047d9c6cfaf0fa48f1bfa.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/section-accreditations-095053567098eb4d0b4e68f1ba795490.css"
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- No specific styles for search-widget section -->
+
+    <script>
+      loadjs(
+        [
+          "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/jquery-6a048ab31e0ef84e62e34cdf63b9b0d0.js",
+        ],
+        "jquery",
+        { async: true }
+      );
+      loadjs(
+        [
+          "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/underscore-b9f266a792a25b8f3a33389c9a007bbe.js",
+        ],
+        "underscore",
+        { async: true }
+      );
+      loadjs.ready("jquery", function () {
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/responsive_helper-fc52c1cce118b80c07ef55c4a8cf3251.js",
+          ],
+          "responsive_helper",
+          { async: true }
+        );
+
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/slick-29fb6dc3c40f34ca2939c5e700884783.js",
+          ],
+          "slick",
+          { async: true }
+        );
+        loadjs(
+          [
+            "css!https://vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/slick-991e3a797253228cbc9d2d9708cd7e21.css",
+          ],
+          "slick_css",
+          { async: true }
+        );
+
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/classOnScroll-f2909165d825eb92de644bc245ae1c00.js",
+          ],
+          "class_on_scroll",
+          { async: true }
+        );
+
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/accordion-7532d2dfbcce15374e72d7000a20e288.js",
+          ],
+          "accordion",
+          { async: true }
+        );
+
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/transition-0363fd9c265e4da5bd48704794e8ab66.js",
+          ],
+          "bootstrap3_transition",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/alert-817a612822f8b83fab849b8fcb408a90.js",
+          ],
+          "bootstrap3_alert",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/button-5ea3e64cc1749bbc9e900d1ae599d401.js",
+          ],
+          "bootstrap3_button",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/collapse-217f0612b7c860ef2ad71846a0e62278.js",
+          ],
+          "bootstrap3_collapse",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/dropdown-6327c57e9906a7cf90f668ffd1bd68b8.js",
+          ],
+          "bootstrap3_dropdown",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/modal-65690fae55aac1373a5c89e8d3d8a52f.js",
+          ],
+          "bootstrap3_modal",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/tooltip-8fea06ae2aebdf6c436829488f616a6f.js",
+          ],
+          "bootstrap3_tooltip",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/tab-512d28e0368d0068e9ed0842513b269a.js",
+          ],
+          "bootstrap3_tab",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/affix-f8e6ac99161b4b955487187a2c8da018.js",
+          ],
+          "bootstrap3_affix",
+          { async: true }
+        );
+
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/trunk8-f20ea1805a3a7f5673608745728b892f.js",
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/jquery.dotdotdot.min-1683e5453d040ae29f48bb1792dd5bdd.js",
+          ],
+          "truncate_text_deps",
+          { async: true }
+        );
+        loadjs.ready("truncate_text_deps", function () {
+          loadjs(
+            [
+              "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/truncate_text-9c5beaa4d1263d74cbfdd4ffe740b68e.js",
+            ],
+            "truncate_text",
+            { async: true }
+          );
+        });
+
+        loadjs(
+          [
+            "css!https://vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/autocomplete-7047ccb3350394004cbacfff2049183b.css",
+          ],
+          "autocomplete_css",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/jquery_deparam-8b3cec7d6f65f8011eb1e8ca5f992320.js",
+          ],
+          "jquery_deparam",
+          { async: true }
+        );
+        loadjs.ready(["jquery", "underscore", "jquery_deparam"], function () {
+          loadjs(
+            [
+              "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/search-9a8fc38b3e9ba67924808ce44aa2d034.js",
+            ],
+            "search",
+            { async: true }
+          );
+        });
+
+        window.VL.search_suggestions = [];
+      });
+
+      loadjs.ready("bootstrap3_tooltip", function () {
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/twitter/bootstrap3/popover-e6f727fd46798d66dd2d3ea445e8e28c.js",
+          ],
+          "bootstrap3_popover",
+          { async: true }
+        );
+      });
+
+      loadjs.ready(["jquery", "underscore", "responsive_helper"], function () {
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/main-003995b1d9958b80c3bb1e52aa828551.js",
+          ],
+          "main",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/mobile_nav-567891c69b3486203a74c94eb27e111f.js",
+          ],
+          "mobile_nav",
+          { async: true }
+        );
+        loadjs(
+          [
+            "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/jquery_accordion-422b51318e8f6eb50e83160bc3198f07.js",
+          ],
+          "jquery_accordion",
+          { async: true }
+        );
+      });
+      loadjs.ready(
+        ["jquery", "bootstrap3_popover", "class_on_scroll"],
+        function () {
+          loadjs(
+            [
+              "https://vl-prod-static.b-cdn.net/assets/common/store_front/themes/flexi_theme/phone_number-134ded9da88437a83db79efe4bd96d50.js",
+            ],
+            "phone_number",
+            { async: true }
+          );
+        }
+      );
+    </script>
+
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/segmented-search-f6b1339e959439857b93cefee68ff466.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../vl-prod-static.b-cdn.net/prod/css-roller/flexi-theme/page-home-789d40413f4189a456dcbdc5ac492017.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Insert your code here -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BSTVQCYZQM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BSTVQCYZQM");
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "../connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "278836514597622");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=278836514597622&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+      .section-type-accreditations .content .logo-item .logo {
+        filter: none;
+      }
+    </style>
+
+    <!-- Insert your code here -->
+  </head>
+
+  <body
+    id=""
+    data-page-type="home"
+    data-page="335909"
+    class="container-fluid assan-container index_handler header_transparent"
+    data-spy="scroll"
+    data-target=".sticky-menu"
+    data-offset="150"
+  >
+    <div class="body-wrapper">
+      <header class="header-transparent">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header-top">
+                <ul class="info-list list-unstyled">
+                  <li>
+                    <div class="multiple-phone">
+                      <a
+                        href="tel:+918382085044"
+                        title="+918382085044"
+                        class="hidden-xs hidden-sm ga-phone-call single-true skip-url-slug-check"
+                      >
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        +918382085044
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="hidden-xs hidden-sm">
+                    <a
+                      href="mailto:nirajsingh19982017@gmail.com"
+                      class="skip-url-slug-check"
+                      title="nirajsingh19982017@gmail.com"
+                      ><i class="fa fa-envelope" aria-hidden="true"></i>
+                      nirajsingh19982017@gmail.com</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- select block -->
+                <div class="top-bar-selectors">
+                  <!-- google translate language select -->
+                  <!-- currency select -->
+                </div>
+              </div>
+
+              <div class="header-holder greedy-nav">
+                <!-- page logo -->
+                <strong class="logo">
+                  <a href="../../index.html">
+                    <img
+                      alt="Trek The Bharat Logo"
+                      class="no-focus"
+                      src="/WhatsApp Image 2024-06-23 at 12.29.31_1e70eae9.png"
+                      id="logo"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="Trek The Bharat Logo"
+                    />
+                  </a>
+                </strong>
+
+                <div class="menu-holder">
+                  <div class="mobile-header hidden-lg hidden-md">
+                    <!-- Phone number trigger -->
+                    <!-- <a href="tel:8888888888" class="mobile-header__icons"> -->
+                    <a
+                      href="tel:+918382085044"
+                      title="Call Us"
+                      class="mobile-header__icons ga-phone-call single-true"
+                    >
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    <!-- Email -->
+                    <a
+                      href="mailto:nirajsingh19982017@gmail.com"
+                      title="nirajsingh19982017@gmail.com"
+                      class="mobile-header__icons message"
+                    >
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <!-- search drop -->
+                    <a
+                      href="#"
+                      class="mobile-header__icons opener search-opener"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                    <!-- burger menu button -->
+                    <a href="#" class="nav-opener"><span></span></a>
+                  </div>
+                  <div class="nav-slide">
+                    <!-- burger menu close button -->
+                    <a href="#" class="nav-close"></a>
+
+                    <!-- main navigation of the page -->
+                    <ul
+                      id="nav"
+                      class="accordion multilevel-accordion visible-links nav-js transparent-nav"
+                    >
+                      <li class="has-drop-down" id="menu-item-0">
+                        <a
+                          href="./TrekTheBharat/collections/weekend-trips.html"
+                          target="_self"
+                          title="Weekend Trips"
+                          >Weekend Trips</a
+                        ><i class="fa fa-angle-down accordion-opener"></i>
+                        <div class="nav-drop slide">
+                          <div class="col-holder">
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/2-nights-3-days-fri-tue.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="2N | 3D Fri-Tue"
+                                  >2N | 3D Fri-Tue</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/mcleodganj-triund-bir.html"
+                                    target="_self"
+                                    title="Mcleodganj Triund Bir"
+                                    >Mcleodganj Triund Bir</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/kasol-tosh.html"
+                                    target="_self"
+                                    title="Kasol Tosh"
+                                    >Kasol Tosh</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/mcleodganj-bir-billing.html"
+                                    target="_self"
+                                    title="Mcleodganj Bir Billing"
+                                    >Mcleodganj Bir Billing</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/jibhi-tirthan.html"
+                                    target="_self"
+                                    title="Jibhi Jalori Tirthan"
+                                    >Jibhi Jalori Tirthan</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/udaipur-kumbhalgarh.html"
+                                    target="_self"
+                                    title="Udaipur Kumbhalgarh"
+                                    >Udaipur Kumbhalgarh</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/kasol-kheerganga.html"
+                                    target="_self"
+                                    title="Kasol Kheerganga"
+                                    >Kasol Kheerganga</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-sissu-kasol.html"
+                                    target="_self"
+                                    title="Manali Sissu Kasol"
+                                    >Manali Sissu Kasol</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/chopta-tungnath.html"
+                                    target="_self"
+                                    title="Chopta Tungnath"
+                                    >Chopta Tungnath</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/jaisalmer-longewala.html"
+                                    target="_self"
+                                    title="Jaisalmer Longewala"
+                                    >Jaisalmer Longewala</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-keylong-jispa-140607.html"
+                                    target="_self"
+                                    title="Manali Keylong Jispa"
+                                    >Manali Keylong Jispa</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/3-nights-4-days-fri-wed.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="3N|4D Fri-Wed"
+                                  >3N|4D Fri-Wed</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/kalpa-chitkul.html"
+                                    target="_self"
+                                    title="Shimla Kalpa Chitkul"
+                                    >Shimla Kalpa Chitkul</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-solang-kasol.html"
+                                    target="_self"
+                                    title="Manali Solang Kasol"
+                                    >Manali Solang Kasol</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/jibhi-tirthan-kasol.html"
+                                    target="_self"
+                                    title="Jibhi Tirthan Kasol"
+                                    >Jibhi Tirthan Kasol</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/mcleodganj-triund-bir.html"
+                                    target="_self"
+                                    title="Mcleodganj Triund Bir"
+                                    >Mcleodganj Triund Bir</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/1-night-2-days-fri-mon.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="1N|2D Fri-Mon"
+                                  >1N|2D Fri-Mon</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/nag-tibba-trek.html"
+                                    target="_self"
+                                    title="Nag Tibba Trek"
+                                    >Nag Tibba Trek</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/parashar-lake.html"
+                                    target="_self"
+                                    title="Parashar Lake"
+                                    >Parashar Lake</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-atal-tunnel-solang-valley.html"
+                                    target="_self"
+                                    title="Manali Atal solang"
+                                    >Manali Atal solang</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/bir-billing.html"
+                                    target="_self"
+                                    title="Bir Billing"
+                                    >Bir Billing</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/chakrata.html"
+                                    target="_self"
+                                    title="Chakrata"
+                                    >Chakrata</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="has-drop-down" id="menu-item-1">
+                        <a
+                          href="./TrekTheBharat/collections/backpacking-trip.html"
+                          target="_blank"
+                          title="Backpacking Trips"
+                          >Backpacking Trips</a
+                        ><i class="fa fa-angle-down accordion-opener"></i>
+                        <div class="nav-drop slide">
+                          <div class="col-holder">
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/kashmir-trips.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Kashmir"
+                                  >Kashmir</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/couple-special-kashmir.html"
+                                    target="_self"
+                                    title="Couple Special Kashmir"
+                                    >Couple Special Kashmir</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/family-special-kashmir.html"
+                                    target="_self"
+                                    title="Family Special Kashmir"
+                                    >Family Special Kashmir</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/group-trip-kashmir-137126.html"
+                                    target="_self"
+                                    title="Group Trip Kashmir"
+                                    >Group Trip Kashmir</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/spiti.html"
+                                  style="color: inherit"
+                                  target="_blank"
+                                  title="Spiti"
+                                  >Spiti</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/spiti-backpacking-137693.html"
+                                    target="_self"
+                                    title="Spiti Backpacking"
+                                    >Spiti Backpacking</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/winter-spiti-137694.html"
+                                    target="_self"
+                                    title="Winter Spiti"
+                                    >Winter Spiti</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/spiti-circuit-137692.html"
+                                    target="_self"
+                                    title="Spiti Circuit"
+                                    >Spiti Circuit</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/summer-spiti-137691.html"
+                                    target="_self"
+                                    title="Summer Spiti"
+                                    >Summer Spiti</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/meghalaya.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Meghalaya"
+                                  >Meghalaya</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/meghalaya-backpacking.html"
+                                    target="_self"
+                                    title="Meghalaya Backpacking"
+                                    >Meghalaya Backpacking</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/meghalaya-kaziranga-137834.html"
+                                    target="_self"
+                                    title="Meghalaya Kaziranga"
+                                    >Meghalaya Kaziranga</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col" style="position: relative">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/collections/himachal-pradesh-trips.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Himachal"
+                                  >Himachal</a
+                                ></strong
+                              ><i class="fa fa-angle-down accordion-opener"></i>
+                              <ul class="slide">
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-kasol-tosh-139696.html"
+                                    target="_self"
+                                    title="Manali Kasol Tosh"
+                                    >Manali Kasol Tosh</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-kasol-kheerganga-139695.html"
+                                    target="_self"
+                                    title="Manali Kasol Kheerganga"
+                                    >Manali Kasol Kheerganga</a
+                                  >
+                                </li>
+                                <li class=" " id="">
+                                  <a
+                                    href="./TrekTheBharat/tours/manali-kasol-jibhi-139693.html"
+                                    target="_self"
+                                    title="Manali Kasol Jibhi"
+                                    >Manali Kasol Jibhi</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="has-drop-down" id="menu-item-2">
+                        <a
+                          href="./TrekTheBharat/collections/ladakh-backpacking.html"
+                          target="_self"
+                          title="Ladakh"
+                          >Ladakh</a
+                        ><i class="fa fa-angle-down accordion-opener"></i>
+                        <div class="nav-drop slide">
+                          <div class="col-holder">
+                            <div class="col">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/leh-to-leh-137393.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Leh to Leh"
+                                  >Leh to Leh</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/manali-leh-manali-137833.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Manali Leh Manali"
+                                  >Manali Leh Manali</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/srinagar-leh-manali-137832.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Srinagar Leh Manali"
+                                  >Srinagar Leh Manali</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/manali-leh-srinagar-137142.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Manali Leh Srinagar"
+                                  >Manali Leh Srinagar</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="has-drop-down" id="menu-item-3">
+                        <a
+                          href="./TrekTheBharat/collections/trekking-trips.html"
+                          target="_self"
+                          title="Trekking Trips"
+                          >Trekking Trips</a
+                        ><i class="fa fa-angle-down accordion-opener"></i>
+                        <div class="nav-drop slide">
+                          <div class="col-holder">
+                            <div class="col">
+                              <strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/hampta-pass-trek-139208.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Hampta Pass Trek"
+                                  >Hampta Pass Trek</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/sar-pass-trek-139209.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Sar Pass Trek"
+                                  >Sar Pass Trek</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/bhrigu-lake-trek-139206.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Bhrigu Lake Trek"
+                                  >Bhrigu Lake Trek</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/kareri-lake-trek-139207.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Kareri Lake Trek"
+                                  >Kareri Lake Trek</a
+                                ></strong
+                              ><strong class="title"
+                                ><a
+                                  href="./TrekTheBharat/tours/valley-of-flowers-140664.html"
+                                  style="color: inherit"
+                                  target="_self"
+                                  title="Valley of Flowers"
+                                  >Valley of Flowers</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class=" " id="menu-item-4">
+                        <a
+                          href="./TrekTheBharat/about-us.html"
+                          target="_self"
+                          title="About Us"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class=" " id="menu-item-5">
+                        <a
+                          href="./TrekTheBharat/contact-us.html"
+                          target="_self"
+                          title="Contact Us"
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+
+                    <div class="more-trigger">
+                      <div>More links</div>
+                      <ul class="hidden-links nav-js transparent-nav"></ul>
+                    </div>
+
+                    <ul class="sticky-action">
+                      <li class="hidden-xs hidden-sm">
+                        <div class="multiple-phone">
+                          <a
+                            href="tel:+918382085044"
+                            title="+918382085044"
+                            class="hidden-xs hidden-sm text-uppercase ga-phone-call single-true"
+                          >
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +91 83820 85044
+                          </a>
+                        </div>
+                      </li>
+                      <li class="hidden-xs hidden-sm">
+                        <a
+                          href="mailto:nirajsingh19982017@gmail.com"
+                          title="nirajsingh19982017@gmail.com"
+                          class="no-caps"
+                          ><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- search drop -->
+                  <a href="#" class="opener search-opener hidden-sm hidden-xs"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- popular search results -->
+      <div id="route-path" style="display: none" data-route-path="/"></div>
+      <div id="body">
+        <div class="page-type-home index" data-page-id="335909">
+          <!-- section is present -->
+          <!-- section has active banner slides -->
+          <!-- banner slide carousel -->
+          <div id="banner-slide-carousel" class="owl-carousel bigger-slides">
+            <div
+              class="section-fluid section-type-banner banner-slide banner-present bigger-slide"
+              data-banner-slide-id="52341"
+              data-slide-type="collection"
+            >
+              <div class="content">
+                <!-- below helper function will return content_tag (used for lazy loading) -->
+                <div
+                  class="no-focus bg-cover-container owl-lazy"
+                  data-src="https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg"
+                  style="background-position: left 51% top 60%"
+                ></div>
+
+                <div class="black-50-overlay"></div>
+                <div class="content-overlay">
+                  <div class="collection-slide">
+                    <div class="pre-heading">
+                      <p>Featured Collection</p>
+                    </div>
+
+                    <div class="title">
+                      <h1>Spiti</h1>
+                    </div>
+
+                    <div class="hero-tagline tagline">
+                      The best is yet out there!
+                    </div>
+
+                    <div class="collection-info">
+                      <ul>
+                        <li>TOURS</li>
+                        <li>4</li>
+                      </ul>
+                      <ul>
+                        <li>STARTING FROM</li>
+                        <li>₹ 12,000</li>
+                      </ul>
+                    </div>
+
+                    <div class="call-to-action">
+                      <a
+                        href="./TrekTheBharat/collections/spiti.html"
+                        class="btn-fill-rounded btn-primary-lg"
+                        target="_self"
+                        title="View Collection"
+                        >View Collection</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="section-fluid section-type-banner banner-slide banner-present bigger-slide"
+              data-banner-slide-id="51718"
+              data-slide-type="custom"
+            >
+              <div class="content">
+                <!-- below helper function will return content_tag (used for lazy loading) -->
+                <div
+                  class="no-focus bg-cover-container owl-lazy"
+                  data-src="https://www.naturetravelagency.com/assets/images/background/travel%20agency%20of%20Kolkata.jpg"
+                  style="background-position: left 50% top 50%"
+                ></div>
+
+                <div class="black-50-overlay"></div>
+                <div class="content-overlay">
+                  <div class="custom-slide">
+                    <div class="title">
+                      <h1>Trek The Bharat</h1>
+                    </div>
+                    <div class="hero-tagline tagline">
+                      Handpicked tours &amp; experiences with expert tour guides
+                      &amp; local insights
+                    </div>
+                    <!-- NOTE: Global Search to be used only on home page with search enabled set in website theme settings -->
+                    <div class="call-to-action">
+                      <a
+                        href="../../index.html"
+                        class="btn-fill-rounded btn-primary-lg"
+                        target="_blank"
+                        title="START DISCOVERING"
+                        >START DISCOVERING</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="section-fluid section-type-banner banner-slide banner-present bigger-slide"
+              data-banner-slide-id="52342"
+              data-slide-type="collection"
+            >
+              <div class="content">
+                <!-- below helper function will return content_tag (used for lazy loading) -->
+                <div
+                  class="no-focus bg-cover-container owl-lazy"
+                  data-src="https://vl-prod-static.b-cdn.net/system/images/000/746/446/4477ee3c441d49ca67d4825239b0000c/large/Kashmir.jpg?1715498613"
+                  style="background-position: left 51% top 65%"
+                ></div>
+
+                <div class="black-50-overlay"></div>
+                <div class="content-overlay">
+                  <div class="collection-slide">
+                    <div class="pre-heading">
+                      <p>Featured Collection</p>
+                    </div>
+
+                    <div class="title">
+                      <h1>Kashmir Trips</h1>
+                    </div>
+
+                    <div class="hero-tagline tagline">
+                      To the heaven of India
+                    </div>
+
+                    <div class="collection-info">
+                      <ul>
+                        <li>TOURS</li>
+                        <li>3</li>
+                      </ul>
+                      <ul>
+                        <li>STARTING FROM</li>
+                        <li>₹ 18,999</li>
+                      </ul>
+                    </div>
+
+                    <div class="call-to-action">
+                      <a
+                        href="./TrekTheBharat/collections/kashmir-trips.html"
+                        class="btn-fill-rounded btn-primary-lg"
+                        target="_self"
+                        title="View Collection"
+                        >View Collection</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="section-fluid section-type-banner banner-slide banner-present bigger-slide"
+              data-banner-slide-id="52344"
+              data-slide-type="collection"
+            >
+              <div class="content">
+                <!-- below helper function will return content_tag (used for lazy loading) -->
+                <div
+                  class="no-focus bg-cover-container owl-lazy"
+                  data-src="https://vl-prod-static.b-cdn.net/system/images/000/746/449/742d5828baee6e479bad69bd32f4e616/large/zen-rocks-hill.jpg?1718552644"
+                  style="background-position: left 45% top 49%"
+                ></div>
+
+                <div class="black-50-overlay"></div>
+                <div class="content-overlay">
+                  <div class="collection-slide">
+                    <div class="pre-heading">
+                      <p>Featured Collection</p>
+                    </div>
+
+                    <div class="title">
+                      <h1>Himachal Pradesh Trips</h1>
+                    </div>
+
+                    <div class="hero-tagline tagline">Mountains Calling...</div>
+
+                    <div class="collection-info">
+                      <ul>
+                        <li>TOURS</li>
+                        <li>24</li>
+                      </ul>
+                      <ul>
+                        <li>STARTING FROM</li>
+                        <li>₹ 3,800</li>
+                      </ul>
+                    </div>
+
+                    <div class="call-to-action">
+                      <a
+                        href="./TrekTheBharat/collections/himachal-pradesh-trips.html"
+                        class="btn-fill-rounded btn-primary-lg"
+                        target="_self"
+                        title="View Collection"
+                        >View Collection</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-area-full-width"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <script>
+                VL.search_widgets = VL.search_widgets || {};
+                VL.search_widgets["section_378043"] = {
+                  dest: "/search",
+                  auto_apply: false,
+                };
+              </script>
+
+              <div
+                class="content-section section section-type-search-widget"
+                data-search-widget-ref="section_378043"
+                data-section-id="378043"
+                data-section-type="advanced_search_widget"
+                data-section-url="/search"
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h2 class="section-title-side-lines" style="color: #333333">
+                      <span class="heading-decor">
+                        Advanced Search Widget
+                      </span>
+                    </h2>
+
+                    <div class="content-holder">
+                      <form
+                        action="#"
+                        class="search-widget global-search-form custom-search"
+                        data-search-widget-ref="section_378043"
+                      >
+                        <input
+                          type="text"
+                          class="js-search-select banner_search form-control"
+                          placeholder="What are you looking for?"
+                        />
+
+                        <div
+                          class="search-filter-checkbox btn-group hidden-xs hidden-sm"
+                        >
+                          <button
+                            class="btn dropdown-toggle"
+                            name="recordinput"
+                            data-toggle="dropdown"
+                          >
+                            <span class="btn-val">Location</span>
+                            <span class="caret"></span>
+                          </button>
+                          <input
+                            type="hidden"
+                            name="label_name"
+                            value="Location"
+                          />
+                          <ul class="dropdown-menu">
+                            <li>
+                              <label
+                                ><input
+                                  type="checkbox"
+                                  name="select_all_filter"
+                                  value="checkbox"
+                                />
+                                <span class="text checkbx"
+                                  >Select All</span
+                                ></label
+                              >
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Manali"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Manali</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="McLeodganj"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Mc Leodganj</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Shimla"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Shimla</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Chitkul"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Chitkul</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Jibhi"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Jibhi</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Tirthan"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Tirthan</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Kasol"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Kasol</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Triund"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Triund</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Bir"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Bir</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Billing"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Billing</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Kheerganga"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Kheerganga</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Tosh"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Tosh</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Chotta"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Chotta</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Tungnath"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Tungnath</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Jaislmer"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Jaislmer</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Udaipur"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Udaipur</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Joshimath"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Joshimath</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Kanatal"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Kanatal</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Chakrata"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Chakrata</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Parashar"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Parashar</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Kashmir"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Kashmir</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Meghalaya"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Meghalaya</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Ladakh"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Ladakh</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Leh"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Leh</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Nag"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Nag</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Shangarh"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Shangarh</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Pushkar"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Pushkar</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Sangla"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Sangla</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Himachal"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Himachal</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  name="custom_fields.location"
+                                  value="Auli"
+                                  onchange="VL.search_widgets['section_378043'].toggle_checkbox_filter('custom_fields.location', this); return false;"
+                                />
+                                <span class="text checkbx">Auli</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-primary apply-search hidden-xs hidden-sm"
+                          onclick="VL.search_widgets['section_378043'].apply_filters();"
+                        >
+                          Search
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-area-full-width tour-cards-container"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <div
+                class="section section-type-tour-cards"
+                data-section-id="374096"
+                data-section-type="tour_cards"
+              >
+                <h2 class="section-title-side-lines" style="color: #333333">
+                  <span class="heading-decor"> Top Selling Tours </span>
+                </h2>
+
+                <div class="cards-content">
+                  <div
+                    class="tours slider-loading tour-carousel"
+                    data-slick='{"slidesToShow": 3}'
+                  >
+                    <div
+                      class="trip-card-layout-3 col-sm-4"
+                      data-trip-id="137126"
+                    >
+                      <!-- slide image -->
+                      <div class="img-block">
+                        <img
+                          alt="Kashmir Backpacking - Tour"
+                          class="focus-image"
+                          data-focus-x="0.09499999999999997"
+                          data-focus-y="-0.07333333333333325"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/766/291/3eb5e5026afca92f14ab8db3c7af517b/x540gt/IMG_5978.jpg?1718940948"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/766/291/3eb5e5026afca92f14ab8db3c7af517b/x270gt/IMG_5978.jpg?1718940948 360w, https://vl-prod-static.b-cdn.net/system/images/000/766/291/3eb5e5026afca92f14ab8db3c7af517b/x540gt/IMG_5978.jpg?1718940948 720w, https://vl-prod-static.b-cdn.net/system/images/000/766/291/3eb5e5026afca92f14ab8db3c7af517b/x810gt/IMG_5978.jpg?1718940948 1080w, https://vl-prod-static.b-cdn.net/system/images/000/766/291/3eb5e5026afca92f14ab8db3c7af517b/x1080gt/IMG_5978.jpg?1718940948 1440w"
+                          sizes="(min-width: 1200px) 360px, (min-width: 992px) and (max-width: 1199px) 290px, (min-width: 768px) and (max-width: 991px) 350px, 100vw"
+                          title="Kashmir Backpacking - Tour"
+                        />
+                      </div>
+                      <!-- slide box -->
+                      <div class="box">
+                        <div class="box-holder">
+                          <h3 data-lines="2">Kashmir Backpacking</h3>
+                          <ul class="location-list">
+                            <li style="max-width: 100%">
+                              <i class="fa fa-clock-o" aria-hidden="true"></i>5
+                              Nights 6 Days
+                            </li>
+                          </ul>
+                          <a
+                            href="./TrekTheBharat/tours/group-trip-kashmir-137126.html"
+                            class="btn btn-fill-rounded trip-book-btn"
+                          >
+                            <span class="inner"
+                              ><span class="price">₹ 20,000</span
+                              ><span>View Details</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="trip-card-layout-3 col-sm-4"
+                      data-trip-id="137692"
+                    >
+                      <!-- slide image -->
+                      <div class="img-block">
+                        <img
+                          alt="Summer Spiti Circuit with Chandratal - Tour"
+                          class="focus-image"
+                          data-focus-x="0.33499999999999996"
+                          data-focus-y="0.19333333333333336"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/766/482/ac8370a83fc775579f2646166b5d4578/x540gt/IMG_5252.jpg?1718809676"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/766/482/ac8370a83fc775579f2646166b5d4578/x270gt/IMG_5252.jpg?1718809676 360w, https://vl-prod-static.b-cdn.net/system/images/000/766/482/ac8370a83fc775579f2646166b5d4578/x540gt/IMG_5252.jpg?1718809676 720w, https://vl-prod-static.b-cdn.net/system/images/000/766/482/ac8370a83fc775579f2646166b5d4578/x810gt/IMG_5252.jpg?1718809676 1080w, https://vl-prod-static.b-cdn.net/system/images/000/766/482/ac8370a83fc775579f2646166b5d4578/x1080gt/IMG_5252.jpg?1718809676 1440w"
+                          sizes="(min-width: 1200px) 360px, (min-width: 992px) and (max-width: 1199px) 290px, (min-width: 768px) and (max-width: 991px) 350px, 100vw"
+                          title="Summer Spiti Circuit with Chandratal - Tour"
+                        />
+                      </div>
+                      <!-- slide box -->
+                      <div class="box">
+                        <div class="box-holder">
+                          <h3 data-lines="2">
+                            Summer Spiti Circuit with Chandratal
+                          </h3>
+                          <ul class="location-list">
+                            <li style="max-width: 100%">
+                              <i class="fa fa-clock-o" aria-hidden="true"></i>6
+                              Nights 7 Days
+                            </li>
+                          </ul>
+                          <a
+                            href="./TrekTheBharat/tours/spiti-circuit-137692.html"
+                            class="btn btn-fill-rounded trip-book-btn"
+                          >
+                            <span class="inner"
+                              ><span class="price">₹ 18,000</span
+                              ><span>View Details</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="clearfix visible-sm"></div>
+                    <div
+                      class="trip-card-layout-3 col-sm-4"
+                      data-trip-id="137393"
+                    >
+                      <!-- slide image -->
+                      <div class="img-block">
+                        <img
+                          alt="Leh to Leh - Tour"
+                          class="focus-image"
+                          data-focus-x="-0.050000000000000044"
+                          data-focus-y="0.28"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/766/486/6014ebdb13df1415fd75208cde419fc3/x540gt/pexels-ex-route-adventures-656223369-25025516.jpg?1718881439"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/766/486/6014ebdb13df1415fd75208cde419fc3/x270gt/pexels-ex-route-adventures-656223369-25025516.jpg?1718881439 360w, https://vl-prod-static.b-cdn.net/system/images/000/766/486/6014ebdb13df1415fd75208cde419fc3/x540gt/pexels-ex-route-adventures-656223369-25025516.jpg?1718881439 720w, https://vl-prod-static.b-cdn.net/system/images/000/766/486/6014ebdb13df1415fd75208cde419fc3/x810gt/pexels-ex-route-adventures-656223369-25025516.jpg?1718881439 1080w, https://vl-prod-static.b-cdn.net/system/images/000/766/486/6014ebdb13df1415fd75208cde419fc3/x1080gt/pexels-ex-route-adventures-656223369-25025516.jpg?1718881439 1440w"
+                          sizes="(min-width: 1200px) 360px, (min-width: 992px) and (max-width: 1199px) 290px, (min-width: 768px) and (max-width: 991px) 350px, 100vw"
+                          title="Leh to Leh - Tour"
+                        />
+                      </div>
+                      <!-- slide box -->
+                      <div class="box">
+                        <div class="box-holder">
+                          <h3 data-lines="2">Leh to Leh</h3>
+                          <ul class="location-list">
+                            <li style="max-width: 100%">
+                              <i class="fa fa-clock-o" aria-hidden="true"></i>5
+                              Nights 6 Days
+                            </li>
+                          </ul>
+                          <a
+                            href="./TrekTheBharat/tours/leh-to-leh-137393.html"
+                            class="btn btn-fill-rounded trip-book-btn"
+                          >
+                            <span class="inner"
+                              ><span class="price">₹ 18,999</span
+                              ><span>View Details</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="clearfix hidden-xs hidden-sm"></div>
+
+                    <div
+                      class="trip-card-layout-3 col-sm-4"
+                      data-trip-id="137109"
+                    >
+                      <!-- slide image -->
+                      <div class="img-block">
+                        <img
+                          alt="Bir Billing - Tour"
+                          class="focus-image"
+                          data-focus-x="0"
+                          data-focus-y="0"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/741/935/433ce44822677625d5d36e866a38dc1b/original/33839247763?1710571507"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/741/935/433ce44822677625d5d36e866a38dc1b/x270gt/33839247763?1710571507 404w, https://vl-prod-static.b-cdn.net/system/images/000/741/935/433ce44822677625d5d36e866a38dc1b/original/33839247763?1710571507 640w"
+                          sizes="(min-width: 1200px) 360px, (min-width: 992px) and (max-width: 1199px) 290px, (min-width: 768px) and (max-width: 991px) 350px, 100vw"
+                          title="Bir Billing - Tour"
+                        />
+                      </div>
+                      <!-- slide box -->
+                      <div class="box">
+                        <div class="box-holder">
+                          <h3 data-lines="2">Bir Billing</h3>
+                          <ul class="location-list">
+                            <li style="max-width: 100%">
+                              <i class="fa fa-clock-o" aria-hidden="true"></i>1
+                              Night 2 Days
+                            </li>
+                          </ul>
+                          <a
+                            href="./TrekTheBharat/tours/bir-billing.html"
+                            class="btn btn-fill-rounded trip-book-btn"
+                          >
+                            <span class="inner"
+                              ><span class="price">₹ 6,000</span
+                              ><span>View Details</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="clearfix visible-sm"></div>
+                    <div
+                      class="trip-card-layout-3 col-sm-4"
+                      data-trip-id="137116"
+                    >
+                      <!-- slide image -->
+                      <div class="img-block">
+                        <img
+                          alt="Nag Tibba Trek - Tour"
+                          class="focus-image"
+                          data-focus-x="0"
+                          data-focus-y="0"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/741/984/eb855ef40f82d9941a474b48c8c9db63/x540gt/NAGTIBBA_4.jpg?1716713054"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/741/984/eb855ef40f82d9941a474b48c8c9db63/x270gt/NAGTIBBA_4.jpg?1716713054 540w, https://vl-prod-static.b-cdn.net/system/images/000/741/984/eb855ef40f82d9941a474b48c8c9db63/x540gt/NAGTIBBA_4.jpg?1716713054 1080w, https://vl-prod-static.b-cdn.net/system/images/000/741/984/eb855ef40f82d9941a474b48c8c9db63/x810gt/NAGTIBBA_4.jpg?1716713054 1620w, https://vl-prod-static.b-cdn.net/system/images/000/741/984/eb855ef40f82d9941a474b48c8c9db63/x1080gt/NAGTIBBA_4.jpg?1716713054 2160w"
+                          sizes="(min-width: 1200px) 360px, (min-width: 992px) and (max-width: 1199px) 290px, (min-width: 768px) and (max-width: 991px) 350px, 100vw"
+                          title="Nag Tibba Trek - Tour"
+                        />
+                      </div>
+                      <!-- slide box -->
+                      <div class="box">
+                        <div class="box-holder">
+                          <h3 data-lines="2">Nag Tibba Trek</h3>
+                          <ul class="location-list">
+                            <li style="max-width: 100%">
+                              <i class="fa fa-clock-o" aria-hidden="true"></i>1
+                              Night 2 Days
+                            </li>
+                          </ul>
+                          <a
+                            href="./TrekTheBharat/tours/nag-tibba-trek.html"
+                            class="btn btn-fill-rounded trip-book-btn"
+                          >
+                            <span class="inner"
+                              ><span class="price">₹ 2,600</span
+                              ><span>View Details</span></span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content" style="padding-top: 15px; clear: both">
+                  <p>
+                    <strong
+                      >Our most visited sights are here for you to
+                      explore!</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-area-full-width collection-cards-container"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <div
+                class="section section-type-activities-we-provide"
+                data-section-id="374098"
+                data-section-type="activities_we_provide"
+              >
+                <h2 class="section-title-side-lines" style="color: #333333">
+                  <span class="heading-decor"> Places We Can Take You To </span>
+                </h2>
+
+                <div class="content count-5">
+                  <div
+                    class="collection collection-card-standard collection-1"
+                    data-collection-id="47978"
+                  >
+                    <a
+                      href="./TrekTheBharat/collections/ladakh-backpacking.html"
+                      class="collection-href"
+                      title="Ladakh Backpacking - Collection"
+                    >
+                      <!-- Using lazy image loading -->
+                      <div class="bg-cover-container">
+                        <img
+                          alt="Ladakh Backpacking - Collection"
+                          class="focus-image"
+                          data-focus-x="0"
+                          data-focus-y="0"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/746/268/4aa634e7788f54c28a743380aca22013/640gt/2091.jpg?1713254074"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/746/268/4aa634e7788f54c28a743380aca22013/320gt/2091.jpg?1713254074 320w, https://vl-prod-static.b-cdn.net/system/images/000/746/268/4aa634e7788f54c28a743380aca22013/640gt/2091.jpg?1713254074 640w, https://vl-prod-static.b-cdn.net/system/images/000/746/268/4aa634e7788f54c28a743380aca22013/960gt/2091.jpg?1713254074 960w, https://vl-prod-static.b-cdn.net/system/images/000/746/268/4aa634e7788f54c28a743380aca22013/1280gt/2091.jpg?1713254074 1280w"
+                          sizes="(min-width: 1200px) 750px, (min-width: 992px) and (max-width: 1199px) 620px, (min-width: 768px) and (max-width: 991px) 410px, 100vw"
+                          title="Ladakh Backpacking - Collection"
+                        />
+                      </div>
+
+                      <div class="image-gradient-overlay"></div>
+
+                      <div class="collection-content">
+                        <div class="h3 title truncatable">
+                          Ladakh Backpacking
+                        </div>
+                        <div class="content-group">
+                          <div class="collection-desc">
+                            <div class="tours">
+                              <span class="small-text">Tours</span>
+                              <span class="h3 tour-count">4</span>
+                            </div>
+                            <div class="pricing">
+                              <span class="small-text">Starting from</span>
+                              <span class="h3 price">₹ 18,999</span>
+                            </div>
+                          </div>
+                          <div class="outline-button hidden-xs hidden-sm">
+                            View tours
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="collection collection-card-standard collection-2"
+                    data-collection-id="47774"
+                  >
+                    <a
+                      href="./TrekTheBharat/collections/backpacking-trip.html"
+                      class="collection-href"
+                      title="Backpacking Trips - Collection"
+                    >
+                      <!-- Using lazy image loading -->
+                      <div class="bg-cover-container">
+                        <img
+                          alt="Backpacking Trips - Collection"
+                          class="focus-image"
+                          data-focus-x="-0.07999999999999996"
+                          data-focus-y="-0.07579463562153665"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/742/373/404fad65954c281eb806e141417a0072/original/trekking-bhrigu-lake-kullu-manali-thumbnail.jpg?1710821708"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/742/373/404fad65954c281eb806e141417a0072/320gt/trekking-bhrigu-lake-kullu-manali-thumbnail.jpg?1710821708 320w, https://vl-prod-static.b-cdn.net/system/images/000/742/373/404fad65954c281eb806e141417a0072/original/trekking-bhrigu-lake-kullu-manali-thumbnail.jpg?1710821708 569w"
+                          sizes="(min-width: 1200px) 750px, (min-width: 992px) and (max-width: 1199px) 620px, (min-width: 768px) and (max-width: 991px) 410px, 100vw"
+                          title="Backpacking Trips - Collection"
+                        />
+                      </div>
+
+                      <div class="image-gradient-overlay"></div>
+
+                      <div class="collection-content">
+                        <div class="h3 title truncatable">
+                          Backpacking Trips
+                        </div>
+                        <div class="content-group">
+                          <div class="collection-desc">
+                            <div class="tours">
+                              <span class="small-text">Tours</span>
+                              <span class="h3 tour-count">13</span>
+                            </div>
+                            <div class="pricing">
+                              <span class="small-text">Starting from</span>
+                              <span class="h3 price">₹ 12,000</span>
+                            </div>
+                          </div>
+                          <div class="outline-button hidden-xs hidden-sm">
+                            View tours
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="collection collection-card-standard collection-3"
+                    data-collection-id="47755"
+                  >
+                    <a
+                      href="./TrekTheBharat/collections/rajasthan-trips.html"
+                      class="collection-href"
+                      title="Rajasthan Trips - Collection"
+                    >
+                      <!-- Using lazy image loading -->
+                      <div class="bg-cover-container">
+                        <img
+                          alt="Rajasthan Trips - Collection"
+                          class="focus-image"
+                          data-focus-x="0.17500000000000004"
+                          data-focus-y="0.05982751819543408"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/742/022/d34e94de6547dd92cf48afd842af78c3/640gt/jaisalmer_2.jpg?1716838089"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/742/022/d34e94de6547dd92cf48afd842af78c3/320gt/jaisalmer_2.jpg?1716838089 320w, https://vl-prod-static.b-cdn.net/system/images/000/742/022/d34e94de6547dd92cf48afd842af78c3/640gt/jaisalmer_2.jpg?1716838089 640w, https://vl-prod-static.b-cdn.net/system/images/000/742/022/d34e94de6547dd92cf48afd842af78c3/960gt/jaisalmer_2.jpg?1716838089 960w, https://vl-prod-static.b-cdn.net/system/images/000/742/022/d34e94de6547dd92cf48afd842af78c3/1280gt/jaisalmer_2.jpg?1716838089 1280w"
+                          sizes="(min-width: 1200px) 750px, (min-width: 992px) and (max-width: 1199px) 620px, (min-width: 768px) and (max-width: 991px) 410px, 100vw"
+                          title="Rajasthan Trips - Collection"
+                        />
+                      </div>
+
+                      <div class="image-gradient-overlay"></div>
+
+                      <div class="collection-content">
+                        <div class="h3 title truncatable">Rajasthan Trips</div>
+                        <div class="content-group">
+                          <div class="collection-desc">
+                            <div class="tours">
+                              <span class="small-text">Tours</span>
+                              <span class="h3 tour-count">1</span>
+                            </div>
+                            <div class="pricing">
+                              <span class="small-text">Starting from</span>
+                              <span class="h3 price">₹ 8,000</span>
+                            </div>
+                          </div>
+                          <div class="outline-button hidden-xs hidden-sm">
+                            View tours
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="collection collection-card-standard collection-4"
+                    data-collection-id="47756"
+                  >
+                    <a
+                      href="./TrekTheBharat/collections/uttarakhand-trips.html"
+                      class="collection-href"
+                      title="Uttarakhand Trips - Collection"
+                    >
+                      <!-- Using lazy image loading -->
+                      <div class="bg-cover-container">
+                        <img
+                          alt="Uttarakhand Trips - Collection"
+                          class="focus-image"
+                          data-focus-x="-0.10499999999999998"
+                          data-focus-y="-0.15604338647196125"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/742/033/86081be91d777c7f9fd4b38b7770eedb/640gt/chakrata.jpg?1713261923"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/742/033/86081be91d777c7f9fd4b38b7770eedb/320gt/chakrata.jpg?1713261923 320w, https://vl-prod-static.b-cdn.net/system/images/000/742/033/86081be91d777c7f9fd4b38b7770eedb/640gt/chakrata.jpg?1713261923 640w, https://vl-prod-static.b-cdn.net/system/images/000/742/033/86081be91d777c7f9fd4b38b7770eedb/960gt/chakrata.jpg?1713261923 960w, https://vl-prod-static.b-cdn.net/system/images/000/742/033/86081be91d777c7f9fd4b38b7770eedb/original/chakrata.jpg?1713261923 1080w"
+                          sizes="(min-width: 1200px) 750px, (min-width: 992px) and (max-width: 1199px) 620px, (min-width: 768px) and (max-width: 991px) 410px, 100vw"
+                          title="Uttarakhand Trips - Collection"
+                        />
+                      </div>
+
+                      <div class="image-gradient-overlay"></div>
+
+                      <div class="collection-content">
+                        <div class="h3 title truncatable">
+                          Uttarakhand Trips
+                        </div>
+                        <div class="content-group">
+                          <div class="collection-desc">
+                            <div class="tours">
+                              <span class="small-text">Tours</span>
+                              <span class="h3 tour-count">3</span>
+                            </div>
+                            <div class="pricing">
+                              <span class="small-text">Starting from</span>
+                              <span class="h3 price">₹ 2,600</span>
+                            </div>
+                          </div>
+                          <div class="outline-button hidden-xs hidden-sm">
+                            View tours
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="collection collection-card-standard collection-5"
+                    data-collection-id="48020"
+                  >
+                    <a
+                      href="./TrekTheBharat/collections/meghalaya.html"
+                      class="collection-href"
+                      title="Meghalaya - Collection"
+                    >
+                      <!-- Using lazy image loading -->
+                      <div class="bg-cover-container">
+                        <img
+                          alt="Meghalaya - Collection"
+                          class="focus-image"
+                          data-focus-x="-0.02499990653990991"
+                          data-focus-y="0.002348537387025562"
+                          data-src="https://vl-prod-static.b-cdn.net/system/images/000/747/144/9148f53d6e81cc7118ad1f3d2b41c238/640gt/asian-cute-girl-student-uniform-sitting-wooden-bridge-enjoy-play-with-banana-leaf-copy-space-rural-lifestyle-concept.jpg?1717287445"
+                          data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/747/144/9148f53d6e81cc7118ad1f3d2b41c238/320gt/asian-cute-girl-student-uniform-sitting-wooden-bridge-enjoy-play-with-banana-leaf-copy-space-rural-lifestyle-concept.jpg?1717287445 320w, https://vl-prod-static.b-cdn.net/system/images/000/747/144/9148f53d6e81cc7118ad1f3d2b41c238/640gt/asian-cute-girl-student-uniform-sitting-wooden-bridge-enjoy-play-with-banana-leaf-copy-space-rural-lifestyle-concept.jpg?1717287445 640w, https://vl-prod-static.b-cdn.net/system/images/000/747/144/9148f53d6e81cc7118ad1f3d2b41c238/960gt/asian-cute-girl-student-uniform-sitting-wooden-bridge-enjoy-play-with-banana-leaf-copy-space-rural-lifestyle-concept.jpg?1717287445 960w, https://vl-prod-static.b-cdn.net/system/images/000/747/144/9148f53d6e81cc7118ad1f3d2b41c238/1280gt/asian-cute-girl-student-uniform-sitting-wooden-bridge-enjoy-play-with-banana-leaf-copy-space-rural-lifestyle-concept.jpg?1717287445 1280w"
+                          sizes="(min-width: 1200px) 750px, (min-width: 992px) and (max-width: 1199px) 620px, (min-width: 768px) and (max-width: 991px) 410px, 100vw"
+                          title="Meghalaya - Collection"
+                        />
+                      </div>
+
+                      <div class="image-gradient-overlay"></div>
+
+                      <div class="collection-content">
+                        <div class="h3 title truncatable">Meghalaya</div>
+                        <div class="content-group">
+                          <div class="collection-desc">
+                            <div class="tours">
+                              <span class="small-text">Tours</span>
+                              <span class="h3 tour-count">1</span>
+                            </div>
+                            <div class="pricing">
+                              <span class="small-text">Starting from</span>
+                              <span class="h3 price">₹ 24,000</span>
+                            </div>
+                          </div>
+                          <div class="outline-button hidden-xs hidden-sm">
+                            View tours
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-area-full-width homepage-testimonials-container"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <div
+                class="section section-type-testimonial"
+                data-section-id="374101"
+                data-section-type="testimonial"
+              >
+                <h2 class="section-title-side-lines" style="color: #333333">
+                  <span class="heading-decor"> Testimonials </span>
+                </h2>
+
+                <div class="content">
+                  <div
+                    class="testimonials testimonial-carousel"
+                    data-slick='{"slidesToShow": 3}'
+                  >
+                    <div class="testimonial count-5">
+                      <p class="message">
+                        The BEST New Year’s getaway with my buddies! They’re not
+                        just a travel agency; they’re your coolest travel pals,
+                        turning every trip into a blast. I am feeling
+                        rejuvenated and happy for the stunning landscapes, the
+                        laughter, and the deep introspection this trip brought.
+                      </p>
+                      <div class="customer">
+                        <div class="profile-pic">
+                          <img
+                            alt="Testimonial by Chinmaya Tripathi"
+                            class="focus-image"
+                            data-focus-x="0.06499999999999995"
+                            data-focus-y="0.7818774715687815"
+                            data-src="https://vl-prod-static.b-cdn.net/system/images/000/737/972/40047fab92701aeab9e096e99f3a809d/100gt/Screenshot_2024-01-24_at_7_20_52%E2%80%AFPM.png?1712337329"
+                            data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/737/972/40047fab92701aeab9e096e99f3a809d/50gt/Screenshot_2024-01-24_at_7_20_52%E2%80%AFPM.png?1712337329 50w, https://vl-prod-static.b-cdn.net/system/images/000/737/972/40047fab92701aeab9e096e99f3a809d/100gt/Screenshot_2024-01-24_at_7_20_52%E2%80%AFPM.png?1712337329 100w, https://vl-prod-static.b-cdn.net/system/images/000/737/972/40047fab92701aeab9e096e99f3a809d/150gt/Screenshot_2024-01-24_at_7_20_52%E2%80%AFPM.png?1712337329 150w, https://vl-prod-static.b-cdn.net/system/images/000/737/972/40047fab92701aeab9e096e99f3a809d/200gt/Screenshot_2024-01-24_at_7_20_52%E2%80%AFPM.png?1712337329 200w"
+                            sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                            title="Testimonial by Chinmaya Tripathi"
+                          />
+                        </div>
+                        <div class="info">
+                          <div class="name no-customer-profile">
+                            Chinmaya Tripathi
+                          </div>
+                          <small class="customer-profile"></small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial count-5">
+                      <p class="message">
+                        Trek The Bharat made my trip unforgettable! They opened
+                        my eyes to new cultures, amazing adventures, and
+                        friendships that will last a lifetime. My parents felt
+                        secure, and I had the time of my life! Trek The Bharat
+                        handled everything – great itineraries, safe travel, and
+                        awesome leaders. The perfect balance of exciting
+                        activities and freedom to explore my own interests. Byko
+                        knows how to create the best trips for young travellers.
+                      </p>
+                      <div class="customer">
+                        <div class="profile-pic">
+                          <img
+                            alt="Testimonial by Yagyaansh Khaneja"
+                            class="focus-image"
+                            data-focus-x="0.06499999999999995"
+                            data-focus-y="-0.3279625064036886"
+                            data-src="https://vl-prod-static.b-cdn.net/system/images/000/744/712/6fe4d8ce0485355b3ac459509b65efed/x100gt/WhatsApp_Image_2024-03-04_at_1_25_25_PM__1_.jpeg?1712371126"
+                            data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/744/712/6fe4d8ce0485355b3ac459509b65efed/x50gt/WhatsApp_Image_2024-03-04_at_1_25_25_PM__1_.jpeg?1712371126 74w, https://vl-prod-static.b-cdn.net/system/images/000/744/712/6fe4d8ce0485355b3ac459509b65efed/x100gt/WhatsApp_Image_2024-03-04_at_1_25_25_PM__1_.jpeg?1712371126 148w, https://vl-prod-static.b-cdn.net/system/images/000/744/712/6fe4d8ce0485355b3ac459509b65efed/x150gt/WhatsApp_Image_2024-03-04_at_1_25_25_PM__1_.jpeg?1712371126 222w, https://vl-prod-static.b-cdn.net/system/images/000/744/712/6fe4d8ce0485355b3ac459509b65efed/x200gt/WhatsApp_Image_2024-03-04_at_1_25_25_PM__1_.jpeg?1712371126 296w"
+                            sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                            title="Testimonial by Yagyaansh Khaneja"
+                          />
+                        </div>
+                        <div class="info">
+                          <div class="name no-customer-profile">
+                            Yagyaansh Khaneja
+                          </div>
+                          <small class="customer-profile"></small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial count-5">
+                      <p class="message">
+                        The trip was amazing! The cozy cottage and polite staff
+                        made it memorable. We explored all planned spots, most
+                        of which were worth it. Deepak, our lively guide,
+                        entertained us with his energetic personality and funny
+                        stories. Overall, it was a fun trip, making the last
+                        day&#x27;s return bittersweet for us all.
+                      </p>
+                      <div class="customer">
+                        <div class="profile-pic">
+                          <img
+                            alt="Testimonial by Himangini Khanna"
+                            class="focus-image"
+                            data-focus-x="-0.19499999999999995"
+                            data-focus-y="-0.06501661650833701"
+                            data-src="https://vl-prod-static.b-cdn.net/system/images/000/745/279/d40cff737c109ed88ea732b27c7317b8/100gt/WhatsApp_Image_2024-03-06_at_4_04_25_PM.jpeg?1712347526"
+                            data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/745/279/d40cff737c109ed88ea732b27c7317b8/50gt/WhatsApp_Image_2024-03-06_at_4_04_25_PM.jpeg?1712347526 50w, https://vl-prod-static.b-cdn.net/system/images/000/745/279/d40cff737c109ed88ea732b27c7317b8/100gt/WhatsApp_Image_2024-03-06_at_4_04_25_PM.jpeg?1712347526 100w, https://vl-prod-static.b-cdn.net/system/images/000/745/279/d40cff737c109ed88ea732b27c7317b8/150gt/WhatsApp_Image_2024-03-06_at_4_04_25_PM.jpeg?1712347526 150w, https://vl-prod-static.b-cdn.net/system/images/000/745/279/d40cff737c109ed88ea732b27c7317b8/200gt/WhatsApp_Image_2024-03-06_at_4_04_25_PM.jpeg?1712347526 200w"
+                            sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                            title="Testimonial by Himangini Khanna"
+                          />
+                        </div>
+                        <div class="info">
+                          <div class="name no-customer-profile">
+                            Himangini Khanna
+                          </div>
+                          <small class="customer-profile"></small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial count-5">
+                      <p class="message">
+                        It was most wonderful trip ever with lots loving people.
+                        Trip leader was too chill and mixed so well with us that
+                        he felt like a friend from earlier. Trip was well
+                        organised , the activities, treck , dancing all was fun
+                        even where we stayed workers were good and served alot
+                        of delvious food I can’t let go of there maggi and omlet
+                        it was daamm🤤 good. I would totally recommend a trip
+                        like this u will have alot of memories for lifetime .
+                      </p>
+                      <div class="customer">
+                        <div class="profile-pic">
+                          <img
+                            alt="Testimonial by Nav Sharma"
+                            class="focus-image"
+                            data-focus-x="0.19999999999999996"
+                            data-focus-y="0.12173630867577545"
+                            data-src="https://vl-prod-static.b-cdn.net/system/images/000/745/280/d0887e86a75d9e59e04536b13e81f315/100gt/WhatsApp_Image_2024-03-06_at_4_09_12_PM.jpeg?1712335431"
+                            data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/745/280/d0887e86a75d9e59e04536b13e81f315/50gt/WhatsApp_Image_2024-03-06_at_4_09_12_PM.jpeg?1712335431 50w, https://vl-prod-static.b-cdn.net/system/images/000/745/280/d0887e86a75d9e59e04536b13e81f315/100gt/WhatsApp_Image_2024-03-06_at_4_09_12_PM.jpeg?1712335431 100w, https://vl-prod-static.b-cdn.net/system/images/000/745/280/d0887e86a75d9e59e04536b13e81f315/150gt/WhatsApp_Image_2024-03-06_at_4_09_12_PM.jpeg?1712335431 150w, https://vl-prod-static.b-cdn.net/system/images/000/745/280/d0887e86a75d9e59e04536b13e81f315/200gt/WhatsApp_Image_2024-03-06_at_4_09_12_PM.jpeg?1712335431 200w"
+                            sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                            title="Testimonial by Nav Sharma"
+                          />
+                        </div>
+                        <div class="info">
+                          <div class="name no-customer-profile">Nav Sharma</div>
+                          <small class="customer-profile"></small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial count-5">
+                      <p class="message">
+                        Trip to mcleodganj was an amazing experience, we have
+                        covered all the spots mentioned in the itinerary. Aniket
+                        was our team captain and he handled team members very
+                        patiently. Very good cordinator and kind. He&#x27;s
+                        funny and tries to involve everyone in group activities
+                        😄.
+                      </p>
+                      <div class="customer">
+                        <div class="profile-pic">
+                          <img
+                            alt="Testimonial by Dolly Burman"
+                            class="focus-image"
+                            data-focus-x="0.04499999999999993"
+                            data-focus-y="-0.3432709464194139"
+                            data-src="https://vl-prod-static.b-cdn.net/system/images/000/745/282/964dbb528f3e234ec029e4bf33053091/100gt/WhatsApp_Image_2024-03-06_at_4_11_12_PM.jpeg?1712394589"
+                            data-srcset="https://vl-prod-static.b-cdn.net/system/images/000/745/282/964dbb528f3e234ec029e4bf33053091/50gt/WhatsApp_Image_2024-03-06_at_4_11_12_PM.jpeg?1712394589 50w, https://vl-prod-static.b-cdn.net/system/images/000/745/282/964dbb528f3e234ec029e4bf33053091/100gt/WhatsApp_Image_2024-03-06_at_4_11_12_PM.jpeg?1712394589 100w, https://vl-prod-static.b-cdn.net/system/images/000/745/282/964dbb528f3e234ec029e4bf33053091/150gt/WhatsApp_Image_2024-03-06_at_4_11_12_PM.jpeg?1712394589 150w, https://vl-prod-static.b-cdn.net/system/images/000/745/282/964dbb528f3e234ec029e4bf33053091/200gt/WhatsApp_Image_2024-03-06_at_4_11_12_PM.jpeg?1712394589 200w"
+                            sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                            title="Testimonial by Dolly Burman"
+                          />
+                        </div>
+                        <div class="info">
+                          <div class="name no-customer-profile">
+                            Dolly Burman
+                          </div>
+                          <small class="customer-profile"></small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-area-full-width description-section"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <div
+                class="content-section section section-type-description"
+                data-section-id="374094"
+                data-section-type="description"
+              >
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h2 class="section-title-side-lines" style="color: #333333">
+                      <span class="heading-decor"> Who We Are </span>
+                    </h2>
+
+                    <div class="content-holder image-align-bottom">
+                      <div
+                        class="text-block no-image-block text-align-center ckeditor-content"
+                      >
+                        <p>
+                          Trek The Bharat specializes in providing extraordinary
+                          travel experiences for individuals in search of
+                          adventures beyond the usual tourist routes.<br />
+                          Offering comprehensive travel packages to diverse
+                          destinations, they ensure an unforgettable journey
+                          with top-notch accommodations, seamless
+                          transportation, and expert-guided tours. Additionally,
+                          Trek The Bharat fosters a community of like-minded
+                          adventurers who share a common passion for travel,
+                          providing companionship for those seeking it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="content-area-full-width"
+            style="background-color: transparent; color: #333333"
+          >
+            <div class="content-area">
+              <div
+                class="section section-type-accreditations"
+                data-section-id="374102"
+                data-section-type="accreditations"
+              >
+                <h2 class="section-title-side-lines" style="color: #333333">
+                  <span class="heading-decor">
+                    Developers of this Project
+                  </span>
+                </h2>
+
+                <div class="content logo-list count-4">
+                  <div class="logo-item">
+                    <img
+                      alt="ATOAI_lOGO_pNG.png - logo"
+                      class="no-focus logo"
+                      src="./Creator/creator3.jpg"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="ATOAI_lOGO_pNG.png - logo"
+                    />
+                  </div>
+
+                  <div class="logo-item">
+                    <img
+                      alt="MSME_Logo_Png.png - logo"
+                      class="no-focus logo"
+                      src="./Creator/creator2.jpg"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="MSME_Logo_Png.png - logo"
+                    />
+                  </div>
+                  <div class="clearfix visible-xs"></div>
+
+                  <div class="logo-item">
+                    <img
+                      alt="pngwing_com.png - logo"
+                      class="no-focus logo"
+                      src="./Creator/creator4.jpg"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="pngwing_com.png - logo"
+                    />
+                  </div>
+                  <div class="clearfix visible-sm"></div>
+
+                  <div class="logo-item">
+                    <img
+                      alt="TripAdvisor-Logo_wine.png - logo"
+                      class="no-focus logo"
+                      src="./Creator/creator1.jpg"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="TripAdvisor-Logo_wine.png - logo"
+                    />
+                  </div>
+                  <div class="logo-item">
+                    <img
+                      alt="TripAdvisor-Logo_wine.png - logo"
+                      class="no-focus logo"
+                      src="./Creator/creator5.jpg"
+                      sizes="(min-width: 1200px) 10vw, (min-width: 768px) 30vw, 100vw"
+                      title="TripAdvisor-Logo_wine.png - logo"
+                    />
+                  </div>
+                  <div class="clearfix visible-xs visible-lg visible-md"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sticky footer -->
+      <a
+        href="tel:+918382085044"
+        class="sticky-footer text-uppercase text-center mobile-header__icons hidden-md hidden-lg sticky-number-group ga-phone-call single-true"
+        title="Call Us"
+      >
+        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+        Call Us
+      </a>
+
+      <!-- footer -->
+      <div class="footer-container footer-multi-column">
+        <div class="content-area footer">
+          <div class="clearfix widgets count-5">
+            <div class="widget get-address">
+              <div class="secondary-section-title title">Project Info</div>
+              <div class="content">
+                <ul>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/about-us.html"
+                      target="_self"
+                      title="About Us"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/contact-us.html"
+                      target="_self"
+                      title="Contact Us"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/terms-and-conditions.html"
+                      target="_self"
+                      title="Terms and Conditions"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/privacy-policy.html"
+                      target="_self"
+                      title="Privacy Policy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/cancellation-policy.html"
+                      target="_self"
+                      title="Cancellation Policy"
+                      >Cancellation Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget get-address">
+              <div class="secondary-section-title title">Our Tours</div>
+              <div class="content">
+                <ul>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/collections/ladakh-backpacking.html"
+                      target="_self"
+                      title="Ladakh"
+                      >Ladakh</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/collections/weekend-trips.html"
+                      target="_self"
+                      title="Weekend Trips"
+                      >Weekend Trips</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/collections/good-friday-trips.html"
+                      target="_self"
+                      title="Good Friday Trips"
+                      >Good Friday Trips</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./TrekTheBharat/collections/tours.html"
+                      target="_self"
+                      title="All Tours"
+                      >All Tours</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix visible-xs visible-sm mobile-clearfix"></div>
+            <div class="widget get-address">
+              <div class="secondary-section-title title">Address</div>
+              <div class="content">
+                <p>kanpur , Gt Road highway 19 , NSTI Kanpur</p>
+              </div>
+            </div>
+            <div class="widget default-footer-widget">
+              <div class="secondary-section-title title">Support Info</div>
+              <div class="content">
+                <span>We are available 24x7 Mon-Fri</span>
+                <div class="hidden-xs hidden-sm">
+                  <a
+                    href="mailto:nirajsingh19982017@gmail.com"
+                    class="support-email skip-title-check"
+                    title="nirajsingh19982017@gmail.com"
+                    >nirajsingh19982017@gmail.com</a
+                  >
+                </div>
+                <a
+                  href="mailto:nirajsingh19982017@gmail.com"
+                  title="nirajsingh19982017@gmail.com"
+                  class="flex-cols email hidden-md hidden-lg"
+                >
+                  <p class="text-capitalize">
+                    <i class="fa fa-envelope cell-icon" aria-hidden="true"></i
+                    >Email Us
+                  </p>
+                </a>
+
+                <!-- Phone group -->
+                <div
+                  class="footer-number-group call-footer hidden-xs hidden-sm"
+                >
+                  <div class="footer-call-wrap">
+                    <div class="popover__label">Head office</div>
+                    <a
+                      class="ga-phone-call single-true"
+                      href="tel:+918382085044"
+                      title="+918382085044"
+                      >+918382085044</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="contact-row hidden-md hidden-lg display-flex footer-number-group call-footer"
+                >
+                  <a
+                    href="tel:+918382085044"
+                    title="Call Us"
+                    class="flex-cols call mobile-header__icons ga-phone-call single-true"
+                  >
+                    <p class="text-capitalize">
+                      <i class="fa fa-phone cell-icon" aria-hidden="true"></i
+                      >Call Us
+                    </p>
+                  </a>
+                </div>
+
+                <div class="hidden-md hidden-lg">
+                  <a
+                    href="https://www.instagram.com/yaduvanshi_pk_07/"
+                    class="skip-url-slug-check"
+                    rel="nofollow"
+                    target="_blank"
+                    title="facebook-social-media"
+                  >
+                    <div class="icon">
+                      <div class="svg svg-facebook">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          width="512px"
+                          height="512px"
+                          viewBox="0 0 512 512"
+                          enable-background="new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="#FFFFFF"
+                            d="M256,7.098C118.535,7.098,7.098,118.535,7.098,256S118.535,504.902,256,504.902
+    c1.78,0,3.554-0.03,5.326-0.067V340.734h-55.124V271.83h55.124v-41.343c0-56.764,32.041-96.467,82.687-96.467
+    c24.255,0,41.343,0,55.124,0v68.905h-27.562c-27.535,0-41.343,13.781-41.343,41.343v27.562h68.905l-13.781,68.904h-55.124v152.908
+    C431.44,462.061,504.902,367.611,504.902,256C504.902,118.535,393.465,7.098,256,7.098z"
+                          />
+                        </svg>
+                      </div>
+                      Facebook
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/yaduvanshi_pk_07/"
+                    class="skip-url-slug-check"
+                    rel="nofollow"
+                    target="_blank"
+                    title="instagram-social-media"
+                  >
+                    <div class="icon">
+                      <div class="svg svg-instagram">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"
+                          />
+                        </svg>
+                      </div>
+                      instagram
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/yaduvanshi_pk_07/"
+                    class="skip-url-slug-check"
+                    rel="nofollow"
+                    target="_blank"
+                    title="youtube-social-media"
+                  >
+                    <div class="icon">
+                      <div class="svg svg-youtube">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          width="512px"
+                          height="512px"
+                          viewBox="0 0 512 512"
+                          enable-background="new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <polygon
+                              fill="#FFFFFF"
+                              points="217.949,313.148 313.196,256 217.949,198.851   "
+                            />
+                            <path
+                              fill="#FFFFFF"
+                              d="M256,7.098C118.535,7.098,7.098,118.535,7.098,256S118.535,504.902,256,504.902
+      S504.902,393.465,504.902,256S393.465,7.098,256,7.098z M408.349,268.287c0,26.307-3.048,52.605-3.048,52.605
+      s-2.981,22.401-12.106,32.25c-11.592,12.936-24.574,13.012-30.526,13.773C320.026,370.184,256,370.297,256,370.297
+      s-79.228-0.771-103.602-3.268c-6.781-1.353-21.993-0.961-33.594-13.896c-9.134-9.849-12.105-32.251-12.105-32.251
+      s-3.049-26.289-3.049-52.604v-24.65c0-26.298,3.049-52.596,3.049-52.596s2.98-22.412,12.105-32.279
+      c11.601-12.935,24.574-13.011,30.527-13.744c42.633-3.305,106.592-3.305,106.592-3.305h0.143c0,0,63.959,0,106.602,3.305
+      c5.952,0.733,18.935,0.81,30.526,13.744c9.134,9.868,12.106,32.279,12.106,32.279s3.048,26.298,3.048,52.604V268.287
+      L408.349,268.287z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      YouTube
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/yaduvanshi_pk_07/"
+                    class="skip-url-slug-check"
+                    rel="nofollow"
+                    target="_blank"
+                    title="linkedin-social-media"
+                  >
+                    <div class="icon">
+                      <div class="svg svg-linkedin">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                          />
+                        </svg>
+                      </div>
+                      LinkedIn
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix visible-xs visible-sm mobile-clearfix"></div>
+          </div>
+
+          <div class="hidden">
+            <!-- Availabilty -->
+            <div class="availability display-flex hidden-md hidden-lg">
+              <!-- <div class="text-uppercase">Monday - Friday</div>
+           <div>9 AM to 5 PM</div> -->
+              <div class="text-uppercase">We are available 24x7 Mon-Fri</div>
+            </div>
+            <!-- Contact actions -->
+            <div
+              class="contact-row hidden-md hidden-lg display-flex footer-number-group call-footer"
+            >
+              <a
+                href="tel:+918382085044"
+                title="Call Us"
+                class="flex-cols call mobile-header__icons ga-phone-call single-true"
+              >
+                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                <p class="text-uppercase">Call Us</p>
+              </a>
+
+              <a
+                href="mailto:nirajsingh19982017@gmail.com"
+                title="nirajsingh19982017@gmail.com"
+                class="flex-cols email"
+              >
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <p class="text-uppercase">Email Us</p>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                title="directions"
+                class="flex-cols directions"
+              >
+                <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                <p class="text-uppercase">
+                  <span
+                    class="translation_missing"
+                    title="translation missing: en.global_strings.store_front.footer.directions"
+                    >Directions</span
+                  >
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social networks -->
+          <ul class="social-networks hidden-xs hidden-sm">
+            <li>
+              <a
+                href="https://www.instagram.com/yaduvanshi_pk_07/"
+                class="skip-url-slug-check"
+                rel="nofollow"
+                target="_blank"
+                title="Trek The Bharat on Facebook"
+              >
+                <div class="icon">
+                  <div class="svg svg-facebook">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="512px"
+                      height="512px"
+                      viewBox="0 0 512 512"
+                      enable-background="new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        d="M256,7.098C118.535,7.098,7.098,118.535,7.098,256S118.535,504.902,256,504.902
+    c1.78,0,3.554-0.03,5.326-0.067V340.734h-55.124V271.83h55.124v-41.343c0-56.764,32.041-96.467,82.687-96.467
+    c24.255,0,41.343,0,55.124,0v68.905h-27.562c-27.535,0-41.343,13.781-41.343,41.343v27.562h68.905l-13.781,68.904h-55.124v152.908
+    C431.44,462.061,504.902,367.611,504.902,256C504.902,118.535,393.465,7.098,256,7.098z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yaduvanshi_pk_07/"
+                class="skip-url-slug-check"
+                rel="nofollow"
+                target="_blank"
+                title="Trek The Bharat on Instagram"
+              >
+                <div class="icon">
+                  <div class="svg svg-instagram">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yaduvanshi_pk_07/"
+                class="skip-url-slug-check"
+                rel="nofollow"
+                target="_blank"
+                title="Trek The Bharat on YouTube"
+              >
+                <div class="icon">
+                  <div class="svg svg-youtube">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="512px"
+                      height="512px"
+                      viewBox="0 0 512 512"
+                      enable-background="new 0 0 512 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          fill="#FFFFFF"
+                          points="217.949,313.148 313.196,256 217.949,198.851   "
+                        />
+                        <path
+                          fill="#FFFFFF"
+                          d="M256,7.098C118.535,7.098,7.098,118.535,7.098,256S118.535,504.902,256,504.902
+      S504.902,393.465,504.902,256S393.465,7.098,256,7.098z M408.349,268.287c0,26.307-3.048,52.605-3.048,52.605
+      s-2.981,22.401-12.106,32.25c-11.592,12.936-24.574,13.012-30.526,13.773C320.026,370.184,256,370.297,256,370.297
+      s-79.228-0.771-103.602-3.268c-6.781-1.353-21.993-0.961-33.594-13.896c-9.134-9.849-12.105-32.251-12.105-32.251
+      s-3.049-26.289-3.049-52.604v-24.65c0-26.298,3.049-52.596,3.049-52.596s2.98-22.412,12.105-32.279
+      c11.601-12.935,24.574-13.011,30.527-13.744c42.633-3.305,106.592-3.305,106.592-3.305h0.143c0,0,63.959,0,106.602,3.305
+      c5.952,0.733,18.935,0.81,30.526,13.744c9.134,9.868,12.106,32.279,12.106,32.279s3.048,26.298,3.048,52.604V268.287
+      L408.349,268.287z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/yaduvanshi_pk_07/"
+                class="skip-url-slug-check"
+                rel="nofollow"
+                target="_blank"
+                title="Trek The Bharat on LinkedIn"
+              >
+                <div class="icon">
+                  <div class="svg svg-linkedin">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright-container">
+          <div class="content-area">
+            <p class="copyright">
+              <a
+                href="https://www.instagram.com/yaduvanshi_pk_07/"
+                class="company test skip-url-slug-check"
+                target="_blank"
+                title="Vacation Labs - Online booking engine for tours and travels"
+              >
+                Online booking system by Students
+              </a>
+              | &copy; 2024<span class="company"> Trek The Bharat </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- jQuery -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&amp;display=swap"
+        media="screen"
+        rel="stylesheet"
+        type="text/css"
+      />
+
+      <script type="text/javascript">
+        var config = {
+          phone: "+91 83820 85044",
+          call: "Message Us",
+          position: "ww-right",
+          size: "ww-normal",
+          text: "",
+          type: "ww-standard",
+          brand: "",
+          subtitle: "",
+          welcome: "",
+        };
+
+        var proto = document.location.protocol,
+          host = "cloudfront.net",
+          url = proto + "//d3kzab8jj16n2f." + host;
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = url + "/v2/main.js";
+
+        s.onload = function () {
+          tmWidgetInit(config);
+        };
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      </script>
+
+      <script src="../polyfill.io/v2/polyfill.minc3f6.js?features=IntersectionObserverEntry%2CIntersectionObserver"></script>
+
+      <script
+        type="text/javascript"
+        src="http://app.vacationlabs.com/check_signin_cookie"
+      ></script>
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="searchModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3>Search</h3>
+            </div>
+            <div class="modal-body">
+              <input
+                type="text"
+                class="search form-control"
+                placeholder="Where would you like to go?"
+              />
+            </div>
+            <div class="modal-footer hidden-md hidden-lg">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("event", "page_view", { send_to: "UA-30889614-2" });
+    </script>
+    <!-- End Google Analytics -->
+  </body>
+
+  <!-- Students of Kanpur Trek The Bharat.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Jun 2024 18:55:12 GMT -->
+</html>
